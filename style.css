@@ -3,6 +3,14 @@ body {
     margin: 0;
     background-color: rgb(255, 255, 255);
 }
+.headers {
+    height: 1782px;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    background:url(img/gas-kvas-com-p-oboi-puteshestviya-goroda-10.jpg) no-repeat;
+    grid-area: headers;
+}
 .grid {
     display: grid;
     grid-template-areas:
@@ -14,7 +22,6 @@ body {
 .headmenu {
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    padding: 20px;
 }
 .headmenu a {
     text-decoration: none;
@@ -24,10 +31,6 @@ body {
 }
 .grid div {
 }
-.headers {
-    grid-area: headers;
-    background-color: rgb(127, 127, 255);
-}
 .menu {
     grid-area: menu;
     background-color: brown;
@@ -36,6 +39,7 @@ body {
     grid-area: mains;
     background-color: rgb(255, 251, 0);
     text-align: left;
+    width: 100%;
 }
 .right {
     grid-area: right;
@@ -53,10 +57,11 @@ body {
 
 .countries-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+    grid-template: 1fr 1fr / 1fr 1fr;
 }
+.container {
 
+}
 .country-item {
     background-color: #fff;
     padding: 20px;
